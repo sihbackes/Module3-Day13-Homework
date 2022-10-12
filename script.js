@@ -34,7 +34,13 @@ const removeFirst = function () {
 /* EXERCISE 8:
              Create a function "getTasksAsArray" which returns, and prints to the console an array containing the tasks as strings
           */
-const getTasksAsArray = function () {};
+const getTasksAsArray = function () {
+  let list = document.querySelectorAll("li");
+  for (let i = 0; i < list.length; i++) {
+    const element = list[i].innerText;
+    console.log(element);
+  }
+};
 
 /* EXERCISE 9:
              Create a function "changeTaskBackgroundColor" and attach it to the "Change task background" button via JavaScript (not via html attribute)
@@ -54,6 +60,7 @@ const changeTaskBackgroundColor = function () {
 /* EXERCISE 11:
              Create a function "bubbleSort()" which sorts the task list alphabetically using the bubble sort algorithm
     */
+const bubbleSort = function () {};
 
 /* #### Suggestion:
      - Break the code into many function for semplicity 
