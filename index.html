@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+ASSIGNMENT RULES
+- The solution must be pushed to the repository and be available for the tutors by the end of the day
+- You can ask for tutor's help
+- You can google / use StackOverflow BUT we suggest you to use just the material provided
+- To test the page, just open it with your default browser.
+
+ASSIGNMENT TOPIC
+You are building a task list website.
+The user should be able to see the list of tasks, add new ones, delete existing ones or sort them all alphabetically.
+-->
+<html lang="en">
+  <head>
+    <!-- EXERCISE 1:
+    Specify the title, the charset (UTF-8) and the viewport of the page.
+    -->
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="main-div">
+      <h1>Welcome to your personal Task List!</h1>
+      <br />
+
+      <span
+        >You can add any task you like by writing it in the specified field and
+        then press "Add new task"</span
+      ><br /><br />
+
+      <input class="newTask" type="text" id="newTask" />
+      <input
+        type="button"
+        class="btn"
+        value="Add new Task"
+        onclick="addNewTask()"
+      />
+
+      <!-- EXERCISE 3
+        Create a button "Remove Last Task" to trigger the function "removeLast"
+        -->
+      <input
+        type="button"
+        class="btn"
+        value="Remove Last Task"
+        onclick="removeLast()"
+      />
+
+      <!-- EXERCISE 4
+        Create a button "Remove First Task" to trigger the function "removeFirst"
+        -->
+      <input
+        type="button"
+        class="btn"
+        value="Remove First Task"
+        onclick="removeFirst()"
+      />
+
+      <ul id="myTaskList" class="task-list-background task-list-itens"></ul>
+
+      <hr />
+
+      <input type="color" placeholder="Color" id="colorPicker" />
+      <input
+        type="button"
+        class="btn"
+        value="Change task background"
+        onclick="changeTaskBackgroundColor()"
+      />
+
+      <hr />
+
+      <input type="button" class="btn" value="Sort" onclick="bubbleSort()" />
+    </div>
+  </body>
+</html>

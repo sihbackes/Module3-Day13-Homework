@@ -1,0 +1,38 @@
+/* EXERCISE 2:  
+       Create a CSS class for the task list with a different background color
+       Create a CSS class for the task list item with a border, a bold text and a bigger font size
+       Style every button of the page to be bigger
+    */
+.main-div {
+  width: 800px;
+  margin-inline: auto;
+  position: relative;
+  top: 50%;
+}
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+.task-list-background {
+  background-color: lightgray;
+}
+
+.task-list-itens {
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.btn {
+  background-color: lightgray;
+  width: 160px;
+  height: 50px;
+  border: none;
+  border-radius: 6px;
+}
+
+.newTask {
+  width: 220px;
+  height: 40px;
+}
